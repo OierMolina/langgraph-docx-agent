@@ -1,7 +1,24 @@
 # Agente LangGraph DOCX (DEV-108)
 
-Este proyecto contiene un agente basado en LangGraph capaz de generar documentos de Microsoft Word (.docx) a partir de instrucciones en lenguaje natural.
+Este proyecto es la plantilla base para un agente que utiliza LangGraph y `python-docx` para generar documentos de Microsoft Word (`.docx`) a partir de instrucciones en lenguaje natural.
 
-## Configuración
-1. Crear entorno virtual e instalar dependencias: `pip install -r requirements.txt`
-2. Copiar `.env.example` a `.env` y configurar las claves.
+## Instalación
+
+1. Crear un entorno virtual.
+2. Instalar las dependencias del proyecto:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Copiar `.env.example` a `.env` y configurar la clave necesaria:
+
+```env
+GROQ_API_KEY=tu_clave_aqui
+```
+
+## Ejecución
+
+```bash
+python main.py
+```
